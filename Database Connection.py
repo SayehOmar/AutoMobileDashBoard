@@ -1,53 +1,46 @@
-from sqlalchemy import create_engine
 import geopandas as gpd
+import pandas as pd
+import subprocess
+
+from pymongo import MongoClient
+import json
+
 
 # ANSI escape codes for colored output
 GREEN = "\033[92m"
+YELLOW = "\033[93m"
 RED = "\033[91m"
 RESET = "\033[0m"
 
-# Create a SQLAlchemy engine
-engine = create_engine("postgresql://postgres:0000@localhost:5432/Dash_Board_Data")
+
+# Read the GPKG file
+gdf = gpd.read_file("CleanedCarsData.gpkg")
+
+# Export to GeoJSON
+gdf.to_file("CleanedCarsData.geojson", driver="GeoJSON")
+print(f"{YELLOW}", gdf.head(3))
+
+client = MongoClient("mongodb://localhost:27017")
+
+# Convert geometries to GeoJSON format
+gdf["geometry"] = gdf["geometry"].apply(
+    lambda geom: json.loads(json.dumps(geom.__geo_interface__))
+)
+
+# Handle NaT values in datetime columns
+for column in gdf.select_dtypes(include=["datetime64[ns, UTC]", "datetime64[ns]"]):
+    gdf[column] = gdf[column].apply(lambda x: x.isoformat() if pd.notnull(x) else None)
 
 
-import psycopg2
+data = gdf.to_dict(orient="records")
+
+
+database = client["Cars_data"]
+
 
 try:
-    # Replace 'your_password' with the actual password for the 'postgres' user
-    conn = psycopg2.connect(
-        dbname="Dash_Board_Data",
-        user="postgres",
-        host="localhost",
-        port="5432",
-    )
-    print(f"{GREEN}Connection successful!")
-
-    # Close the connection
-    conn.close()
-
-except psycopg2.Error as e:
-    print("Connection failed:", e)
-
-    # Test the connection
-
-try:
-    # Connect to the database
-    with engine.connect() as conn:
-        # Execute a simple query
-        result = conn.execute(text("SELECT 1"))
-        print(result.scalar())  # Should print '1' if the query executed successfully
-
+    # Insert the data into MongoDB
+    result = database.Cars_data.insert_many(data)
+    print(f"{GREEN}Inserted {len(result.inserted_ids)} documents Correctly ")
 except Exception as e:
-    print("Error executing query:", e)
-
-# Load the GeoDataFrame from the GeoPackage
-# gdf = gpd.read_file("CleanedCarsData.gpkg", layer="cars_data")
-
-# debug
-# print(gdf.head(2))
-# print(gdf.crs)
-# print(gdf.geometry)
-
-
-# Use GeoPandas to_sql method to insert the GeoDataFrame into PostgreSQL
-# gdf.to_postgis("Cars_data", engine, if_exists="append")
+    print(f"{RED}Failed to insert data: {e}")
