@@ -1,6 +1,5 @@
 import geopandas as gpd
 import pandas as pd
-import subprocess
 
 from pymongo import MongoClient
 import json
