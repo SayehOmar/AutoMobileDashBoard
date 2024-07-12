@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/', indexRouter);
+app.use('/api', indexRouter);
 
 // Serve the HTML page
 app.get('/', (req, res) => {

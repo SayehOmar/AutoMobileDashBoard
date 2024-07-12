@@ -18,7 +18,7 @@ while True:
     print("Fetching URL:", url)
     response = requests.get(url)
 
-    if response.status_code != 200 or page_number > 1:
+    if response.status_code != 200 or page_number > 50:
         break
 
     soup = BeautifulSoup(response.content, "html.parser")
