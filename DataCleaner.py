@@ -15,6 +15,22 @@ df.dropna(subset="Brand", inplace=True)
 df["Announcement_date"] = pd.to_datetime(df["Announcement_date"], errors="coerce")
 
 
+# Correcting the date
+def clean_year(value):
+    try:
+        # Split the value by the dot and take the second part
+        return int(value.split(".")[1])
+    except (IndexError, ValueError):
+        return 0  # Return 0 or a default value if parsing fails
+
+
+# Apply the custom function to the column
+df["Manufacture_year"] = df["Manufacture_year"].astype(str).apply(clean_year)
+
+# Convert Price and Mileage to integer
+df["Price"] = df["Price"].str.replace(" ", "").astype(int)
+df["Mileage"] = df["Mileage"].str.replace("km", "").str.replace(" ", "").astype(int)
+
 Tunisia = gpd.read_file("shpfile/Tunisia.shp")
 
 # Save cleaned data

@@ -38,6 +38,10 @@ database = client["Cars_data"]
 
 
 try:
+    # Delete all existing documents in the collection
+    if database.Cars_data.delete_many({}):
+        print("Old data is deleted")
+
     # Insert the data into MongoDB
     result = database.Cars_data.insert_many(data)
     print(f"{GREEN}Inserted {len(result.inserted_ids)} documents Correctly ")
