@@ -1,11 +1,42 @@
 Brand,Model,Manufacture_year,Mileage,Price,Body_type,Fuel,Horse_Power,Gear_box,Transmission,Announcement_date,Governorate,Address
-Mercedes-Benz,ML,2014,83000,185000,SUV/4x4,Diesel,16cv,Automatique,Intégrale,2024-11-07,Nabeul,NaN
-Mazda,CX-9,2019,160000,95000,SUV/4x4,Essence,15cv,Automatique,Intégrale,2024-11-07,Tunis,NaN
-BMW,Série 1,2016,18000,95000,Citadine,Essence,7cv,Automatique,Propulsion,2024-11-07,Nabeul,NaN
-Audi,A4,2018,34000,125000,Berline,Essence,8cv,Automatique,Traction,2024-11-07,Ariana,NaN
-Volkswagen,Polo,2018,48000,48300,Citadine,Essence,4cv,Manuelle,Traction,2024-11-07,Sfax,NaN
-BMW,Série 4 Gran Coupé,2019,73000,129000,Berline,Essence,7cv,Automatique,Traction,2024-11-07,Ariana,NaN
-Alfa Romeo,Giulietta,2019,30000,75000,Compacte,Essence,7cv,Manuelle,Propulsion,2024-11-07,Tunis,NaN
-Fiat,500,2018,70000,37000,Autres,Essence,4cv,Manuelle,Traction,2024-11-07,Tunis,NaN
-Mahindra,KUV 100,2018,100000,27500,Citadine,Essence,5cv,Manuelle,Traction,2024-11-07,Kairouan,NaN
-Porsche,Cayenne,2012,130000,140000,SUV/4x4,Essence,21cv,Automatique,Intégrale,2024-11-07,Tunis,NaN
+Mercedes-Benz,Classe A,2017,200000,82000,Compacte,Essence,6cv,Manuelle,Traction,2024-07-17,Tunis,NaN
+Mercedes-Benz,Classe C,2017,73132,68000,Berline,Diesel,plus de 48cv,Automatique,Intégrale,2024-07-17,Tunis,NaN
+Peugeot,208,2017,156000,26000,Citadine,Essence,5cv,Manuelle,Traction,2024-07-17,Tunis,NaN
+Mercedes-Benz,Classe E,201,200000,78000,Berline,Diesel,8cv,Automatique,Traction,2024-07-17,Ben Arous,NaN
+Fiat,500,2018,100000,37800,Citadine,Essence,4cv,Manuelle,Traction,2024-07-17,Ariana,NaN
+Audi,A1 Sportback,2017,90000,55000,Citadine,Essence,6cv,Automatique,Traction,2024-07-17,Ariana,NaN
+Land Rover,Range Rover,201,55000,189000,SUV/4x4,Essence,32cv,Automatique,Intégrale,2024-07-17,Nabeul,NaN
+BMW,Série 5,2017,57000,180000,Berline,Essence,15cv,Automatique,Traction,2024-07-17,Monastir,NaN
+Mercedes-Benz,Classe A,2014,115000,68000,Citadine,Diesel,5cv,Automatique,Traction,2024-07-17,La Manouba,NaN
+Peugeot,208,2019,122000,30500,Compacte,Essence,4cv,Manuelle,Traction,2024-07-17,Ariana,NaN
+BMW,Série 3,2016,154000,73000,Berline,Essence,7cv,Automatique,Traction,2024-07-17,Sousse,NaN
+Volkswagen,Passat CC,2012,178000,55000,Coupé,Diesel,10cv,Automatique,Traction,2024-07-17,Ariana,NaN
+Haval,H6,2019,122000,74000,Compacte,Essence,9cv,Automatique,Traction,2024-07-17,Tunis,NaN
+Land Rover,Range Rover Sport,2016,230000,195000,Compacte,Diesel,16cv,Automatique,Traction,2024-07-17,Tunis,NaN
+Peugeot,3008,2019,109000,72000,Compacte,Essence,7cv,Automatique,Traction,2024-07-17,Tunis,NaN
+Jaguar,F-Pace,2018,84000,195000,SUV/4x4,Diesel,10cv,Automatique,Traction,2024-07-17,Tunis,NaN
+Jaguar,XF,2017,41000,149000,Compacte,Essence,16cv,Automatique,Traction,2024-07-17,Tunis,NaN
+BMW,X5,2008,140000,73000,SUV/4x4,Essence,19cv,Automatique,Intégrale,2024-07-17,Ariana,NaN
+Ford,Fiesta,2014,170000,34000,Citadine,Essence,5cv,Manuelle,Traction,2024-07-17,Tunis,NaN
+Jaguar,F-Type,2017,9000,340000,Coupé,Essence,19cv,Automatique,Propulsion,2024-07-17,Tunis,NaN
+Seat,Leon,2018,105000,52000,Berline,Essence,6cv,Manuelle,Propulsion,2024-07-17,Tunis,NaN
+Porsche,Macan,2016,88000,205000,SUV/4x4,Diesel,16cv,Automatique,Intégrale,2024-07-17,Tunis,NaN
+Iveco,Daily Fourgon,2014,430000,40000,Utilitaire,Diesel,10cv,Manuelle,Intégrale,2024-07-17,Sousse,NaN
+Mercedes-Benz,Classe E,2013,182000,85000,Autres,Diesel,10cv,Automatique,Intégrale,2024-07-17,Ariana,NaN
+Mercedes-Benz,Classe C,2011,210000,61000,Autres,Diesel,10cv,Automatique,Intégrale,2024-07-17,Ariana,NaN
+BMW,Série 5,2001,300000,23000,Compacte,Essence,11cv,Manuelle,Traction,2024-07-17,Tunis,NaN
+Haval,H6,2017,230000,52000,SUV/4x4,Essence,9cv,Automatique,Traction,2024-07-17,Ben Arous,NaN
+Mazda,2 Sedan,2019,96000,52000,Berline,Essence,6cv,Automatique,Traction,2024-07-17,Gabès,NaN
+Chery,Tiggo 3X,2023,45000,83000,SUV/4x4,Essence,6cv,Automatique,Traction,2024-07-17,Mahdia,NaN
+Audi,A4,2018,34000,125000,Berline,Essence,8cv,Automatique,Traction,2024-07-17,Ariana,NaN
+Mahindra,KUV 100,2018,100000,27500,Citadine,Essence,5cv,Manuelle,Traction,2024-07-17,Monastir,NaN
+BMW,Série 4 Gran Coupé,2019,73000,129000,Berline,Essence,7cv,Automatique,Traction,2024-07-17,Ariana,NaN
+Mercedes-Benz,Classe C,2017,79000,125000,Berline,Essence,8cv,Automatique,Traction,2024-07-17,Ariana,NaN
+Ford,Fiesta,2012,134700,31500,Citadine,Essence,5cv,Manuelle,Traction,2024-07-17,Ben Arous,NaN
+Mercedes-Benz,Classe A,2019,45000,142000,Compacte,Essence,8cv,Automatique,Traction,2024-07-17,Tunis,NaN
+BMW,Série 3 coupé,2012,152000,78000,Coupé,Essence,10cv,Manuelle,Traction,2024-07-17,Ariana,NaN
+Mercedes-Benz,Classe C,2011,200000,73000,Utilitaire,Essence,9cv,Automatique,Traction,2024-07-17,Ariana,NaN
+BMW,Série 1,2016,18000,95000,Citadine,Essence,7cv,Automatique,Propulsion,2024-07-17,Nabeul,NaN
+Chery,E3,2017,136000,30000,Citadine,Essence,6cv,Manuelle,Traction,2024-07-17,Tunis,NaN
+KIA,Rio Berline,201,160000,29000,Berline,Essence,6cv,Manuelle,Traction,2024-07-17,Sfax,NaN
+Volkswagen,Golf 7,2016,74000,120000,Citadine,Essence,13cv,Automatique,Traction,2024-07-17,Ariana,NaN
